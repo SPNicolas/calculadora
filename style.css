@@ -1,32 +1,10 @@
-.calculator {
-    padding: 60px;
-    text-align: center;
-    border: 2px solid black;
-    margin: 150px 500px 800px 550px;
-    background-color: gray;
-    border-radius: 20px;
-   
-}
-.button , .buttongray {
-    padding: 20px;
-    background-color: bisque;
-  
-    font-size: 20px;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.buttonpurpletext {
-    padding: 20px;
-    background-color: red;
+button {
+    padding: 15px;
+    margin: auto;
 }
-
-.buttonpurple {
-    background-color: blue;
-    padding: 20px;
-}
-
-.display > input {
-    padding: 20px;
-}
-
-
-
