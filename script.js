@@ -1,22 +1,19 @@
 function inserir(num) {
-    document.querySelector(".display").innerHTML += num;
+    document.getElementById("display").innerHTML += num;//Ele serve para inserir um número ou operador.
 }
 
 function limpar() {
-    document.querySelector(".display").innerHTML = "";
+    document.querySelector(".display").innerHTML = "";//Ele serve para limpar a conta da tela. 
 }
 
 
 function total() {
-    let display = document.querySelector(".display").innerHTML;
-    if (display) {
+    let display = document.getElementById("display");
+    if (display.innerHTML) {
         let history = document.getElementById("history");
-        history.innerText = display;
-        document.querySelector(".display").value = eval(display);
+        history.innerText = display.innerHTML;
+        display.textContent = eval(display.innerHTML);
     } else {
         document.querySelector(".display").innerHTML = "Comando errado";
     }
 }
-
-
-limpar();
