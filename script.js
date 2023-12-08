@@ -20,6 +20,7 @@ function total() {
 }
 
 document.addEventListener("keypress", function (event) {
+    
     if (event.key == "1") {
         inserir(1)
     } 
@@ -59,8 +60,8 @@ document.addEventListener("keypress", function (event) {
     if (event.key == "c") {
         limpar()
     }
-    if (event.key == ".") {
-        inserir(".")
+    if (event.key == "*") {
+        inserir("*")
     }
         
 })
