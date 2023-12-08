@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   <section>
-    <!-- CALCULATOR -->
-    <div class="calculator">
-        <!-- DISPLAY -->
-        <div id="display" class="display">
-           
-        </div>
-        <h2 id="history">-</h2>
+    <section>
+        <!-- CALCULATOR -->
+        <div class="calculator">
+            <!-- DISPLAY -->
+            <div class="resultado-historico">
+                <h2 id="history">-</h2>
+                <div id="display" class="display">
+                </div>
+            </div>
 
-        <!-- <BUTTONS -->
-        <div class="row">
-            
-            <div></div>
-            <div></div>
-            <button class="button gray" onclick="inserir('/')">/</button>
-        </div>
 
-        <div class="row">
-            <button class="button" onclick="inserir(7)">7</button>
-            <button class="button" onclick="inserir(8)">8</button>
-            <button class="button" onclick="inserir(9)">9</button>
-            <button class="button gray" onclick="inserir('*')">*</button>
-        </div>
 
-        <div class="row">
-            <button class="button" onclick="inserir(4)">4</button>
-            <button class="button" onclick="inserir(5)">5</button>
-            <button class="button" onclick="inserir(6)">6</button>
-            <button class="button gray" onclick="inserir('-')">-</button>
-        </div>
+            <!-- <BUTTONS -->
+            <div class="row">
 
-        <div class="row">
-            <button class="button" onclick="inserir(1)">1</button>
-            <button class="button" onclick="inserir(2)">2</button>
-            <button class="button" onclick="inserir(3)">3</button>
-            <button class="button gray" onclick="inserir('+')">+</button>
-        </div>
+                <div></div>
+                <div></div>
+                <button class="button gray" onclick="inserir('/')">/</button>
+            </div>
 
-        <div class="row">
-            <div></div>
-            <button class="button" onclick="inserir(0)">0</button>
-            <button class="button" onclick="inserir('.')">.</button>
-            <button class="button purple" onclick="total()">=</button>
-            <button class="button purple-text" onclick="limpar()">C</button>
-        </div>
-        <!-- BUTTONS/> -->
-        <!-- <h5>
+            <div class="row">
+                <button class="button" onclick="inserir(7)">7</button>
+                <button class="button" onclick="inserir(8)">8</button>
+                <button class="button" onclick="inserir(9)">9</button>
+                <button class="button gray" onclick="inserir('*')">*</button>
+            </div>
+
+            <div class="row">
+                <button class="button" onclick="inserir(4)">4</button>
+                <button class="button" onclick="inserir(5)">5</button>
+                <button class="button" onclick="inserir(6)">6</button>
+                <button class="button gray" onclick="inserir('-')">-</button>
+            </div>
+
+            <div class="row">
+                <button class="button" onclick="inserir(1)">1</button>
+                <button class="button" onclick="inserir(2)">2</button>
+                <button class="button" onclick="inserir(3)">3</button>
+                <button class="button gray" onclick="inserir('+')">+</button>
+            </div>
+
+            <div class="row">
+                <div></div>
+                <button class="button" onclick="inserir(0)">0</button>
+                <button class="button" onclick="inserir('.')">.</button>
+                <button class="button purple" onclick="total()">=</button>
+                <button class="button purple-text" onclick="limpar()">C</button>
+            </div>
+            <!-- BUTTONS/> -->
+            <!-- <h5>
             <p class="source">*Esta calculadora foi extraída de <a
                     href="https://blogdomat.vercel.app/8-criando-uma-calculadora-com-html-css-javascript">Blog do
                     Mat</a></p>
         </h5> -->
 
-    </div>    <script type="text/javascript" src="script.js"></script>
-</section>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </section>
 </body>
-   
+
 </html>
