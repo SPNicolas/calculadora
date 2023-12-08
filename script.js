@@ -20,7 +20,9 @@ function total() {
 }
 
 document.addEventListener("keypress", function (event) {
-    
+    if (event.key == "Enter") {
+        total()
+    }
     if (event.key == "1") {
         inserir(1)
     } 
