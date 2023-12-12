@@ -6,11 +6,7 @@ function inserir(num) {
 function limpar() {
     document.querySelector(".display").innerHTML = "";//Ele serve para limpar a conta da tela. 
 }
-function deletar() {
-    
-    let display = document.getElementById("display").innerHTML ;
-    document.getElementById("display").innerHTML = display.substring(0,display.lenght -1)
-}
+
 
 function total() {
     let display = document.getElementById("display");
@@ -69,8 +65,6 @@ document.addEventListener("keypress", function (event) {
     if (event.key == "*") {
         inserir("*")
     }
-    if (event.key == "Delete") {
-        deletar()
-    }
+    
         
 })
